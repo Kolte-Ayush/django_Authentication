@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Authentication</title>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{%static 'Mycss/File.css'%}" rel="stylesheet">
+    <style rel="text/css">
+        body{
+        background-image: url("https://www.bestfunforall.com/better/imgs/80%20shops%20wallpaper%20%2017.jpg");
+        background-repeat: repeat;
+        background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+
+<nav class='navbar navbar-default navbar-inverse'>
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/"><img style="margin: -90px;" src="https://s3.amazonaws.com/amzping.com/extras/shopkeeper_logo_320_132.png"></a></a>
+        </div>
+        <ul class='nav navbar-nav cust'>
+            <li><a style="color:green;" href="/cust"><h1><mark>CUSTOMER</mark></h1></a></li>
+        </ul>
+        <ul class='nav navbar-nav navbar-right'>
+            <li><a style="color:GREEN;" href='/regis'><mark>SIGNUP</mark></a></li>
+            <li><a style="color:GREEM;" href="/accounts/login"><mark>Login</mark></a></li>
+            <li><a style="color:red;" href="/accounts/logout"><mark>Logout</mark></a></li>
+        </ul>
+    </div>
+</nav>
+
+{% block body_block %}
+{% endblock %}
+</body>
+</html>

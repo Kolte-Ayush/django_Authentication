@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'myapps/base.html' %}
+	{% block body_block %}
+	<div class="container" align="center" style="color: white;">
+		<h1 >Login to View Account Details..!!</h1>
+		<form method='POST'>
+			{{form.as_p}}
+			{% csrf_token %}
+			<button type="submit" class='btn btn-lg btn-primary'>
+				Login
+			</button>
+		</form>
+	</div>
+{% endblock %}

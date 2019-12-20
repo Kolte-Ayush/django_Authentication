@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'myapps/base.html' %}
+    {% block body_block %}
+    <div class="container" align="center" style="color: white; text-align:centre;">
+        <h1>Hi Register Here..!!</h1>
+        <form method='POST'>
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="submit" class="btn btn-lg btn-primary" value="Register Here">
+        </form>
+    </div>
+    {% endblock %}
+<body>
+</body>
+</html>
